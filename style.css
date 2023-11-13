@@ -272,9 +272,9 @@ font-weight: bolder;
 
 #footer .footer-top .social-links a {
     
-    display: inline-flex;
-justify-content: space-around;
-  /* align-items: flex-end;*/
+  /* display: inline-flex; */
+  justify-content: space-around;
+  align-items: flex-end;
   border-radius: 50%;
   font-size: 18px;
   color: white;
@@ -298,6 +298,7 @@ justify-content: space-around;
   font-size: 20px;
   color: #3498db;
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 -------------------------------------------------------------*/
