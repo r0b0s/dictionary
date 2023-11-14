@@ -5,12 +5,28 @@ body{
 #site_name{
     margin-top: 10px;
     margin-left: -4%;
-text-align: center;
-font-size: 50px;
-font-family: "Audiowide", sans-serif;
-color: #3498db; /* Blue color */
-
-
+    text-align: center;
+    font-size: 50px;
+    font-family: "Audiowide", sans-serif;
+    color: #3498db; /* Blue color */
+    text-shadow: 3px 0s #eee;
+    animation-name: liting;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes liting {
+  0% {
+    color: #3498db;
+    text-shadow: 3px 3px 0 #ffc10f;
+  }
+  50%{
+    color:#ffc107;
+    text-shadow: 3px 3px 0 #3498db;
+  }
+  100% {
+    color: #3498db;
+    text-shadow: 3px 3px 0 #ffc10f;
+  }
 }
 hr:not([size]) {
   color: #3498db; /* Blue color */
@@ -299,6 +315,10 @@ font-weight: bolder;
   color: #3498db;
 }
 
+#footer .copyright .fa-spin{
+  animation-duration: 25s;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 -------------------------------------------------------------*/
@@ -315,5 +335,4 @@ font-weight: bolder;
   background-color:black ;
   border-color: black;
 }
-
 
